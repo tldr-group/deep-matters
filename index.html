@@ -60,6 +60,7 @@
       .mobile-menu.open{display:grid;gap:.5rem;padding:0 1.2rem 1rem;border-bottom:1px solid var(--border);background:rgba(255,255,255,.95)}
       .mobile-menu a{padding:.75rem 1rem;border-radius:12px;background:transparent;border:1px solid var(--border)}
       .mobile-menu a:hover{background:#f3f4f6}
+      .mobile-menu .btn{background:var(--accent);color:#000;font-weight:700;border:none;box-shadow:0 6px 18px rgba(250,178,43,.35)}
     }
 
     main{padding-block:1rem}
@@ -113,6 +114,14 @@
       .brand img{height:56px}
       .speakers{grid-template-columns:1fr}
     }
+    
+    /* Title responsive behavior */
+    @media (min-width: 768px){
+      .hero h1{white-space:nowrap;}
+    }
+    @media (max-width: 767px){
+      .hero h1{white-space:normal;line-height:1.1;}
+    }
 
     /* Fancy hero */
     .hero{position:relative;padding-top:2.2rem}
@@ -142,7 +151,7 @@
       </div>
       <nav aria-label="Primary">
         <a href="#about">About</a>
-        <a href="#dates">Venue</a>
+        <a href="#dates">Date & Venue</a>
         <a href="#speakers">Speakers</a>
         <a href="#organizers">Organizers</a>
         <a href="#program">Program</a>
@@ -155,7 +164,7 @@
     <div id="mobileMenu" class="mobile-menu" aria-label="Mobile">
       <a href="#about">About</a>
       <a href="#dates">Date & Venue</a>
-      <a href="#speakers">Invited Speakers</a>
+      <a href="#speakers">Speakers</a>
       <a href="#organizers">Organizers</a>
       <a href="#program">Program</a>
       <a href="#conduct">Code of Conduct</a>
@@ -171,7 +180,7 @@
         <div class="hero-wrap">
           
           <!-- Main title -->
-          <h1 style="font-size:clamp(3rem,5.5vw,4.5rem);font-weight:900;text-align:center;margin-bottom:0.8rem;color:var(--fg);line-height:1;letter-spacing:-0.02em;white-space:nowrap;">DeepMatter: Foundations 2025</h1>
+          <h1 style="font-size:clamp(3rem,5.5vw,4.5rem);font-weight:900;text-align:center;margin-bottom:0.8rem;color:var(--fg);line-height:1;letter-spacing:-0.02em;">DeepMatter: Foundations 2025</h1>
           
           <!-- Subtitle -->
           <div style="text-align:center;margin-bottom:2rem;">
@@ -209,9 +218,7 @@
     <section id="dates">
       <div class="container">
         <h2>Dates</h2>
-        <ul>
         <p><strong>6th Nov 2025</strong></p>
-        </ul>
         <h2>Venue</h2>
         <p><strong>Google Cloud Startup Hub</strong><br>4–5 Bonhill Street, London EC2A 4BX, UK</p>        
         
