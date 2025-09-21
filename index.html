@@ -85,8 +85,8 @@
 
     /* Speakers */
     .speakers{display:grid;grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));gap:var(--grid-gap)}
-    .speaker{border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;background:var(--panel);transition:transform .18s ease, box-shadow .18s ease;display:flex;flex-direction:column;align-items:center;text-align:center}
-    .speaker:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(0,0,0,.15)}
+    .speaker{border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;background:var(--panel);transition:transform .18s ease, box-shadow .18s ease;display:flex;flex-direction:column;align-items:center;text-align:center;text-decoration:none;color:inherit;cursor:pointer}
+    .speaker:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(0,0,0,.15);text-decoration:none}
     .speaker strong{display:block;margin-bottom:.5rem;font-size:1.1rem}
     .speaker .aff{color:var(--accent-2);font-size:.95rem;font-weight:600;background:rgba(250,178,43,.1);padding:.2rem .5rem;border-radius:6px;display:inline-block;margin-bottom:.3rem}
     .muted{color:var(--muted)}
@@ -247,48 +247,47 @@
       <div class="container">
         <h2>Confirmed Speakers</h2>
         <div class="speakers">
-          <div class="speaker">
-            <img src="images/peter-coveney.jpg" alt="Peter Coveney" style="width:100px;height:100px;border-radius:50%;object-fit:cover;border:3px solid var(--accent);margin-bottom:1rem;box-shadow:0 4px 16px rgba(250,178,43,.3);" onerror="this.style.display='none'">
-            <strong>Peter Coveney</strong>
+          <a href="https://profiles.ucl.ac.uk/3406-peter-coveney" target="_blank" rel="noopener" class="speaker" style="text-decoration:none;color:inherit;">
+            <img src="images/peter-coveney.jpg" alt="Prof. Peter Coveney" style="width:100px;height:100px;border-radius:50%;object-fit:cover;border:3px solid var(--accent);margin-bottom:1rem;box-shadow:0 4px 16px rgba(250,178,43,.3);" onerror="this.style.display='none'">
+            <strong>Prof. Peter Coveney</strong>
+            <div style="color:var(--muted);font-weight:500;margin-bottom:.2rem;font-size:.9rem;">Professor of Physical Chemistry</div>
             <div class="aff">UCL</div>
-            <div class="muted">Talk title TBA</div>
-          </div>
-          <div class="speaker">
-            <img src="images/kevin-jablonka.jpg" alt="Kevin Maik Jablonka" style="width:100px;height:100px;border-radius:50%;object-fit:cover;border:3px solid var(--accent);margin-bottom:1rem;box-shadow:0 4px 16px rgba(250,178,43,.3);" onerror="this.style.display='none'">
-            <strong>Kevin Maik Jablonka</strong>
-            <div class="aff">Friedrich-Schiller-Universität Jena</div>
-            <div class="muted">Talk title TBA</div>
-          </div>
-          <div class="speaker">
-            <img src="images/piero-altoe.jpg" alt="Piero Altoe" style="width:100px;height:100px;border-radius:50%;object-fit:cover;border:3px solid var(--accent);margin-bottom:1rem;box-shadow:0 4px 16px rgba(250,178,43,.3);" onerror="this.style.display='none'">
-            <strong>Piero Altoe</strong>
+          </a>
+          <a href="https://kjablonka.com/?utm_source=chatgpt.com" target="_blank" rel="noopener" class="speaker" style="text-decoration:none;color:inherit;">
+            <img src="images/kevin-jablonka.jpg" alt="Dr. Kevin Maik Jablonka" style="width:100px;height:100px;border-radius:50%;object-fit:cover;border:3px solid var(--accent);margin-bottom:1rem;box-shadow:0 4px 16px rgba(250,178,43,.3);" onerror="this.style.display='none'">
+            <strong>Dr. Kevin Maik Jablonka</strong>
+            <div style="color:var(--muted);font-weight:500;margin-bottom:.2rem;font-size:.9rem;">Junior Professor</div>
+            <div class="aff">Friedrich Schiller University Jena</div>
+          </a>
+          <a href="https://www.linkedin.com/in/pieroaltoe/?originalSubdomain=it" target="_blank" rel="noopener" class="speaker" style="text-decoration:none;color:inherit;">
+            <img src="images/piero-altoe.jpg" alt="Dr.Piero Altoe" style="width:100px;height:100px;border-radius:50%;object-fit:cover;border:3px solid var(--accent);margin-bottom:1rem;box-shadow:0 4px 16px rgba(250,178,43,.3);" onerror="this.style.display='none'">
+            <strong>Dr. Piero Altoe</strong>
+            <div style="color:var(--muted);font-weight:500;margin-bottom:.2rem;font-size:.9rem;">Senior Developer Relations Manager</div>
             <div class="aff">NVIDIA</div>
-            <div class="muted">Talk title TBA</div>
-          </div>
-          <div class="speaker">
+          </a>
+          <a href="https://www.linkedin.com/in/jamesgin/?originalSubdomain=uk" target="_blank" rel="noopener" class="speaker" style="text-decoration:none;color:inherit;">
             <img src="images/james-gin.jpg" alt="James Gin" style="width:100px;height:100px;border-radius:50%;object-fit:cover;border:3px solid var(--accent);margin-bottom:1rem;box-shadow:0 4px 16px rgba(250,178,43,.3);" onerror="this.style.display='none'">
             <strong>James Gin</strong>
+            <div style="color:var(--muted);font-weight:500;margin-bottom:.2rem;font-size:.9rem;">Co-founder & CEO</div>
             <div class="aff">Orbital Materials</div>
-            <div class="muted">Talk title TBA</div>
-          </div>
-          <div class="speaker">
-            <img src="images/sina-samangooei.jpg" alt="Sina Samangooei" style="width:100px;height:100px;border-radius:50%;object-fit:cover;border:3px solid var(--accent);margin-bottom:1rem;box-shadow:0 4px 16px rgba(250,178,43,.3);" onerror="this.style.display='none'">
-            <strong>Sina Samangooei</strong>
-            <div class="aff">Cusp AI</div>
-            <div class="muted">Talk title TBA</div>
-          </div>
-          <div class="speaker">
-            <img src="images/steven-kench.jpg" alt="Steven Kench" style="width:100px;height:100px;border-radius:50%;object-fit:cover;border:3px solid var(--accent);margin-bottom:1rem;box-shadow:0 4px 16px rgba(250,178,43,.3);" onerror="this.style.display='none'">
-            <strong>Steven Kench</strong>
+          </a>
+          <a href="https://www.linkedin.com/in/sinjax/?originalSubdomain=uk" target="_blank" rel="noopener" class="speaker" style="text-decoration:none;color:inherit;">
+            <img src="images/sina-samangooei.jpg" alt="Dr. Sina Samangooei" style="width:100px;height:100px;border-radius:50%;object-fit:cover;border:3px solid var(--accent);margin-bottom:1rem;box-shadow:0 4px 16px rgba(250,178,43,.3);" onerror="this.style.display='none'">
+            <strong>Dr. Sina Samangooei</strong>
+            <div style="color:var(--muted);font-weight:500;margin-bottom:.2rem;font-size:.9rem;">CTO</div>
+            <div class="aff">CuspAI</div>
+          </a>
+          <a href="https://www.linkedin.com/in/steve-kench-a26a2a2b1/" target="_blank" rel="noopener" class="speaker" style="text-decoration:none;color:inherit;">
+            <img src="images/steven-kench.jpg" alt="Dr. Steven Kench" style="width:100px;height:100px;border-radius:50%;object-fit:cover;border:3px solid var(--accent);margin-bottom:1rem;box-shadow:0 4px 16px rgba(250,178,43,.3);" onerror="this.style.display='none'">
+            <strong>Dr. Steven Kench</strong>
+            <div style="color:var(--muted);font-weight:500;margin-bottom:.2rem;font-size:.9rem;">Co-founder & CTO</div>
             <div class="aff">Polaron</div>
-            <div class="muted">Talk title TBA</div>
-          </div>
+          </a>
           <!-- Pending speaker from Google DeepMind -->
           <div class="speaker" style="border-style:dashed">
             <img src="images/deepmind-speaker.jpg" alt="Google DeepMind Speaker" style="width:100px;height:100px;border-radius:50%;object-fit:cover;border:3px solid var(--accent);margin-bottom:1rem;box-shadow:0 4px 16px rgba(250,178,43,.3);opacity:0.6;" onerror="this.style.display='none'">
             <strong>[Tentative] Speaker</strong>
             <div class="aff">Google DeepMind</div>
-            <div class="muted">Tentative title TBA</div>
           </div>
         </div>
       </div>
@@ -299,16 +298,18 @@
       <div class="container">
         <h2>Organizers</h2>
          <div class="organizers" style="display:grid;grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));gap:2rem;margin-top:1.5rem;">
-           <div class="organizer" style="display:flex;flex-direction:column;align-items:center;text-align:center;padding:1.5rem;border:1px solid var(--border);border-radius:var(--radius);background:var(--panel);transition:transform .18s ease, box-shadow .18s ease;cursor:pointer;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 12px 26px rgba(0,0,0,.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+          <a href="https://www.linkedin.com/in/ge-lei-04706b28b/?originalSubdomain=uk" target="_blank" rel="noopener" class="organizer" style="display:flex;flex-direction:column;align-items:center;text-align:center;padding:1.5rem;border:1px solid var(--border);border-radius:var(--radius);background:var(--panel);transition:transform .18s ease, box-shadow .18s ease;cursor:pointer;text-decoration:none;color:inherit;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 12px 26px rgba(0,0,0,.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <img src="images/lei-ge.JPG" alt="Lei Ge" style="width:120px;height:120px;border-radius:50%;object-fit:cover;border:4px solid var(--accent);margin-bottom:1rem;box-shadow:0 4px 16px rgba(250,178,43,.3);" onerror="this.style.display='none'">
+            <strong style="display:block;font-size:1.2rem;margin-bottom:.5rem;color:var(--fg);">Lei Ge</strong>
+            <div style="color:var(--muted);font-weight:500;margin-bottom:.3rem;font-size:0.95rem;">PhD Student</div>
+            <div style="color:var(--accent-2);font-weight:600;margin-bottom:.3rem;">Imperial College London</div>
+          </a> 
+          <a href="https://profiles.imperial.ac.uk/samuel.cooper" target="_blank" rel="noopener" class="organizer" style="display:flex;flex-direction:column;align-items:center;text-align:center;padding:1.5rem;border:1px solid var(--border);border-radius:var(--radius);background:var(--panel);transition:transform .18s ease, box-shadow .18s ease;cursor:pointer;text-decoration:none;color:inherit;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 12px 26px rgba(0,0,0,.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
              <img src="images/samuel-cooper.jpg" alt="Dr. Samuel J. Cooper" style="width:120px;height:120px;border-radius:50%;object-fit:cover;border:4px solid var(--accent);margin-bottom:1rem;box-shadow:0 4px 16px rgba(250,178,43,.3);" onerror="this.style.display='none'">
              <strong style="display:block;font-size:1.2rem;margin-bottom:.5rem;color:var(--fg);">Dr. Samuel J. Cooper</strong>
+             <div style="color:var(--muted);font-weight:500;margin-bottom:.3rem;font-size:0.95rem;">Associate Professor in AI for Materials Design</div>
              <div style="color:var(--accent-2);font-weight:600;margin-bottom:.3rem;">Imperial College London</div>
-           </div>
-           <div class="organizer" style="display:flex;flex-direction:column;align-items:center;text-align:center;padding:1.5rem;border:1px solid var(--border);border-radius:var(--radius);background:var(--panel);transition:transform .18s ease, box-shadow .18s ease;cursor:pointer;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 12px 26px rgba(0,0,0,.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
-             <img src="images/lei-ge.JPG" alt="Lei Ge" style="width:120px;height:120px;border-radius:50%;object-fit:cover;border:4px solid var(--accent);margin-bottom:1rem;box-shadow:0 4px 16px rgba(250,178,43,.3);" onerror="this.style.display='none'">
-             <strong style="display:block;font-size:1.2rem;margin-bottom:.5rem;color:var(--fg);">Lei Ge</strong>
-             <div style="color:var(--accent-2);font-weight:600;margin-bottom:.3rem;">Imperial College London</div>
-           </div>
+           </a>
          </div>
       </div>
     </section>
