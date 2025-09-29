@@ -84,11 +84,17 @@
     .btn.secondary{background:transparent;color:var(--accent-2);border:1px solid var(--accent);box-shadow:none}
 
     /* Speakers */
-    .speakers{display:grid;grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));gap:var(--grid-gap)}
-    .speaker{border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;background:var(--panel);transition:transform .18s ease, box-shadow .18s ease;display:flex;flex-direction:column;align-items:center;text-align:center;text-decoration:none;color:inherit;cursor:pointer}
+    .speakers{display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:var(--grid-gap)}
+    .speaker{border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;background:var(--panel);transition:transform .18s ease, box-shadow .18s ease;display:flex;flex-direction:column;align-items:center;text-align:center;text-decoration:none;color:inherit;position:relative}
     .speaker:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(0,0,0,.15);text-decoration:none}
     .speaker strong{display:block;margin-bottom:.5rem;font-size:1.1rem}
+    .speaker .title{color:var(--muted);font-size:.85rem;font-style:italic;margin-bottom:.5rem}
     .speaker .aff{color:var(--accent-2);font-size:.95rem;font-weight:600;background:rgba(250,178,43,.1);padding:.2rem .5rem;border-radius:6px;display:inline-block;margin-bottom:.3rem}
+    .expand-btn{position:absolute;bottom:1rem;right:1rem;width:28px;height:28px;border-radius:50%;background:var(--accent);color:#1a1200;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.2rem;font-weight:bold;transition:all .2s ease;box-shadow:0 2px 8px rgba(250,178,43,.3)}
+    .expand-btn:hover{background:var(--accent-2);transform:scale(1.1)}
+    .speaker-bio{margin-top:1rem;padding:1rem;background:rgba(250,178,43,.05);border:1px solid rgba(250,178,43,.2);border-radius:8px;font-size:.9rem;line-height:1.5;color:var(--fg);display:none;text-align:left}
+    .speaker-bio.show{display:block;animation:fadeIn .3s ease}
+    @keyframes fadeIn{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:translateY(0)}}
     .muted{color:var(--muted)}
 
     /* Table */
@@ -246,43 +252,8 @@
     <section id="speakers">
       <div class="container">
         <h2>Confirmed Speakers</h2>
-        <div class="speakers">
-          <a href="https://www.linkedin.com/in/pieroaltoe/?originalSubdomain=it" target="_blank" rel="noopener" class="speaker" style="text-decoration:none;color:inherit;">
-            <img src="images/piero-altoe.jpg" alt="Dr.Piero Altoe" style="width:100px;height:100px;border-radius:50%;object-fit:cover;border:3px solid var(--accent);margin-bottom:1rem;box-shadow:0 4px 16px rgba(250,178,43,.3);" onerror="this.style.display='none'">
-            <strong>Dr. Piero Altoe</strong>
-            <div class="aff">NVIDIA</div>
-          </a>
-          <a href="https://profiles.ucl.ac.uk/3406-peter-coveney" target="_blank" rel="noopener" class="speaker" style="text-decoration:none;color:inherit;">
-            <img src="images/peter-coveney.jpg" alt="Prof. Peter Coveney" style="width:100px;height:100px;border-radius:50%;object-fit:cover;border:3px solid var(--accent);margin-bottom:1rem;box-shadow:0 4px 16px rgba(250,178,43,.3);" onerror="this.style.display='none'">
-            <strong>Prof. Peter Coveney</strong>
-            <div class="aff">UCL</div>
-          </a>
-          <a href="https://www.linkedin.com/in/jamesgin/?originalSubdomain=uk" target="_blank" rel="noopener" class="speaker" style="text-decoration:none;color:inherit;">
-            <img src="images/james-gin.jpg" alt="James Gin" style="width:100px;height:100px;border-radius:50%;object-fit:cover;border:3px solid var(--accent);margin-bottom:1rem;box-shadow:0 4px 16px rgba(250,178,43,.3);" onerror="this.style.display='none'">
-            <strong>James Gin</strong>
-            <div class="aff">Orbital Materials</div>
-          </a>
-          <a href="https://kjablonka.com/?utm_source=chatgpt.com" target="_blank" rel="noopener" class="speaker" style="text-decoration:none;color:inherit;">
-            <img src="images/kevin-jablonka.jpg" alt="Dr. Kevin Maik Jablonka" style="width:100px;height:100px;border-radius:50%;object-fit:cover;border:3px solid var(--accent);margin-bottom:1rem;box-shadow:0 4px 16px rgba(250,178,43,.3);" onerror="this.style.display='none'">
-            <strong>Dr. Kevin Maik Jablonka</strong>
-            <div class="aff">University of Jena</div>
-          </a>
-          <a href="https://www.linkedin.com/in/steve-kench-a26a2a2b1/" target="_blank" rel="noopener" class="speaker" style="text-decoration:none;color:inherit;">
-            <img src="images/steven-kench.jpg" alt="Dr. Steven Kench" style="width:100px;height:100px;border-radius:50%;object-fit:cover;border:3px solid var(--accent);margin-bottom:1rem;box-shadow:0 4px 16px rgba(250,178,43,.3);" onerror="this.style.display='none'">
-            <strong>Dr. Steven Kench</strong>
-            <div class="aff">Polaron</div>
-          </a>
-          <a href="https://www.linkedin.com/in/sinjax/?originalSubdomain=uk" target="_blank" rel="noopener" class="speaker" style="text-decoration:none;color:inherit;">
-            <img src="images/sina-samangooei.jpg" alt="Dr. Sina Samangooei" style="width:100px;height:100px;border-radius:50%;object-fit:cover;border:3px solid var(--accent);margin-bottom:1rem;box-shadow:0 4px 16px rgba(250,178,43,.3);" onerror="this.style.display='none'">
-            <strong>Dr. Sina Samangooei</strong>
-            <div class="aff">CuspAI</div>
-          </a>
-          <!-- Pending speaker from Google DeepMind -->
-          <div class="speaker" style="border-style:dashed">
-            <img src="images/deepmind-speaker.jpg" alt="Google DeepMind Speaker" style="width:100px;height:100px;border-radius:50%;object-fit:cover;border:3px solid var(--accent);margin-bottom:1rem;box-shadow:0 4px 16px rgba(250,178,43,.3);opacity:0.6;" onerror="this.style.display='none'">
-            <strong>[Tentative] Speaker</strong>
-            <div class="aff">Google DeepMind</div>
-          </div>
+        <div class="speakers" id="speakers-container">
+          <!-- Speakers will be dynamically loaded from config -->
         </div>
       </div>
     </section>
@@ -476,6 +447,7 @@
     </div>
   </footer>
 
+  <script src="speakers-config.js"></script>
   <script>
     // Set current year
     document.getElementById('year').textContent = new Date().getFullYear();
@@ -487,6 +459,72 @@
       const open = m.classList.toggle('open');
       btn.setAttribute('aria-expanded', String(open));
     });
+
+    // Load speakers from config and render them
+    function loadSpeakers() {
+      const speakersContainer = document.getElementById('speakers-container');
+      
+      Object.keys(speakersConfig).forEach(speakerId => {
+        const speaker = speakersConfig[speakerId];
+        
+        const speakerDiv = document.createElement('div');
+        speakerDiv.className = 'speaker';
+        if (speakerId === 'deepmind-speaker') {
+          speakerDiv.style.borderStyle = 'dashed';
+        }
+        
+        speakerDiv.innerHTML = `
+          <button class="expand-btn" id="btn-${speakerId}" onclick="event.stopPropagation(); toggleBio('${speakerId}')">+</button>
+          <img src="${speaker.image}" alt="${speaker.name}" style="width:100px;height:100px;border-radius:50%;object-fit:cover;border:3px solid var(--accent);margin-bottom:1rem;box-shadow:0 4px 16px rgba(250,178,43,.3);${speakerId === 'deepmind-speaker' ? 'opacity:0.6;' : ''}" onerror="this.style.display='none'">
+          <strong>${speaker.name}</strong>
+          <div class="title">${speaker.title}</div>
+          <div class="aff">${speaker.affiliation}</div>
+          <div class="speaker-bio" id="bio-${speakerId}" onclick="event.stopPropagation();">
+            ${speaker.bio}
+          </div>
+        `;
+        
+        // Add click handler for the entire card (except expand button and bio)
+        if (speaker.linkedin !== '#') {
+          speakerDiv.style.cursor = 'pointer';
+          speakerDiv.addEventListener('click', (event) => {
+            // Don't navigate if clicking on expand button or bio
+            if (event.target.closest('.expand-btn') || event.target.closest('.speaker-bio')) {
+              return;
+            }
+            window.open(speaker.linkedin, '_blank', 'noopener');
+          });
+        }
+        
+        speakersContainer.appendChild(speakerDiv);
+      });
+    }
+
+    // Speaker bio toggle functionality
+    function toggleBio(speakerId) {
+      const bioElement = document.getElementById(`bio-${speakerId}`);
+      const btnElement = document.getElementById(`btn-${speakerId}`);
+      
+      if (bioElement.classList.contains('show')) {
+        bioElement.classList.remove('show');
+        btnElement.textContent = '+';
+      } else {
+        // Hide all other bios first
+        document.querySelectorAll('.speaker-bio.show').forEach(bio => {
+          bio.classList.remove('show');
+        });
+        document.querySelectorAll('.expand-btn').forEach(btn => {
+          btn.textContent = '+';
+        });
+        
+        // Show this bio
+        bioElement.classList.add('show');
+        btnElement.textContent = '−';
+      }
+    }
+
+    // Load speakers when page loads
+    document.addEventListener('DOMContentLoaded', loadSpeakers);
   </script>
 </body>
 </html>
