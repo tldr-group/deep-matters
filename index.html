@@ -207,7 +207,7 @@
           <!-- Description -->
           <div style="text-align:center;max-width:850px;margin:0 auto 2.5rem;">
             <p class="lead" style="color:var(--muted);font-size:1rem;line-height:1.6;margin-bottom:1.2rem;">Deep Matters: Foundations is the first edition of the Deep Matters international conference series, dedicated to exploring how foundation models are transforming materials research and innovation.</p>
-            <p class="lead" style="color:var(--muted);font-size:1rem;line-height:1.6;">This year’s conference features speakers from Google, NVIDIA, Cusp AI, Orbital Materials, Polaron, and leading academic institutions. Bringing together academia, established companies, and startups, the event offers a unique forum where scientific advances meet industrial applications and entrepreneurial innovation.</p>
+            <p class="lead" style="color:var(--muted);font-size:1rem;line-height:1.6;">This year’s conference features speakers from NVIDIA, Cusp AI, Orbital Materials, Polaron, and leading academic institutions. Bringing together academia, established companies, and startups, the event offers a unique forum where scientific advances meet industrial applications and entrepreneurial innovation.</p>
           </div>
 
           <!-- CTA Buttons -->
@@ -469,13 +469,10 @@
         
         const speakerDiv = document.createElement('div');
         speakerDiv.className = 'speaker';
-        if (speakerId === 'deepmind-speaker') {
-          speakerDiv.style.borderStyle = 'dashed';
-        }
         
         speakerDiv.innerHTML = `
           <button class="expand-btn" id="btn-${speakerId}" onclick="event.stopPropagation(); toggleBio('${speakerId}')">+</button>
-          <img src="${speaker.image}" alt="${speaker.name}" style="width:100px;height:100px;border-radius:50%;object-fit:cover;border:3px solid var(--accent);margin-bottom:1rem;box-shadow:0 4px 16px rgba(250,178,43,.3);${speakerId === 'deepmind-speaker' ? 'opacity:0.6;' : ''}" onerror="this.style.display='none'">
+          <img src="${speaker.image}" alt="${speaker.name}" style="width:100px;height:100px;border-radius:50%;object-fit:cover;border:3px solid var(--accent);margin-bottom:1rem;box-shadow:0 4px 16px rgba(250,178,43,.3);" onerror="this.style.display='none'">
           <strong>${speaker.name}</strong>
           <div class="title">${speaker.title}</div>
           <div class="aff">${speaker.affiliation}</div>
@@ -549,12 +546,12 @@
         organizerDiv.className = 'organizer';
         
         organizerDiv.innerHTML = `
-          <button class="expand-btn" id="btn-${organizerId}" onclick="event.stopPropagation(); toggleOrganizerBio('${organizerId}')">+</button>
+          <button class="expand-btn" id="org-btn-${organizerId}" onclick="event.stopPropagation(); toggleOrganizerBio('${organizerId}')">+</button>
           <img src="${organizer.image}" alt="${organizer.name}" style="width:120px;height:120px;border-radius:50%;object-fit:cover;border:4px solid var(--accent);margin-bottom:1rem;box-shadow:0 4px 16px rgba(250,178,43,.3);" onerror="this.style.display='none'">
           <strong>${organizer.name}</strong>
           <div class="title">${organizer.title}</div>
           <div class="aff">${organizer.affiliation}</div>
-          <div class="organizer-bio" id="bio-${organizerId}" onclick="event.stopPropagation();">
+          <div class="organizer-bio" id="org-bio-${organizerId}" onclick="event.stopPropagation();">
             ${convertLinksInText(organizer.bio)}
           </div>
         `;
@@ -575,8 +572,8 @@
 
     // Organizer bio toggle functionality
     function toggleOrganizerBio(organizerId) {
-      const bioElement = document.getElementById(`bio-${organizerId}`);
-      const btnElement = document.getElementById(`btn-${organizerId}`);
+      const bioElement = document.getElementById(`org-bio-${organizerId}`);
+      const btnElement = document.getElementById(`org-btn-${organizerId}`);
       
       if (bioElement.classList.contains('show')) {
         bioElement.classList.remove('show');

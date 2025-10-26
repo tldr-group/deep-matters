@@ -27,16 +27,18 @@ const speakersConfig = {
   "kevin-jablonka": {
     name: "Dr. Kevin Maik Jablonka",
     affiliation: "University of Jena",
-    title: "Title coming soon",
+    title: "A Chemistry-Specific Large Language Model",
     image: "images/kevin-jablonka.jpg",
     linkedin: "https://kjablonka.com/?utm_source=chatgpt.com",
+    bio:"Kevin Jablonka is a researcher with over 30 peer-reviewed publications in machine learning for materials science and digital chemistry. He leads an independent research group at the Helmholtz Institute for Polymers in Energy Applications of the University of Jena and the Helmholtz Center Berlin. Kevin has received numerous awards, such as the Dimitris N. Chorafas Foundation award for outstanding Ph.D. work. He is an active member of the scientific community, serving as a peer reviewer for over 20 journals and as an area chair for machine learning conferences. Kevin belongs to a new generation of scientists with a broad skill set, combining expertise in chemistry, materials science, and artificial intelligence. His research focuses on the digitization of chemistry, from developing electronic lab notebook ecosystems to creating toolboxes for digital reticular chemistry. Recently, Kevin has been at the forefront of applying Large Language Models (LLMs) to chemistry and materials science, co-organizing hackathons and workshops in this rapidly evolving field. Kevin’s research addresses challenges across scales, from atomic-level simulations to pilot plant operations, pushing the boundaries of AI-accelerated discovery in chemistry and materials science."
   },
   "steven-kench": {
     name: "Dr. Steven Kench",
     affiliation: "Polaron",
-    title: "Title coming soon",
+    title: "Foundational models for materials manufacturing",
     image: "images/steven-kench.jpg",
     linkedin: "https://www.linkedin.com/in/steve-kench-a26a2a2b1/",
+    bio:"Steve Kench completed his PhD at Imperial College London, where he developed generative machine learning methods for battery electrode design. He is now the CTO of Polaron, leading the creation of image-based AI tools for material science. His work centres on microstructural characterisation and the optimisation of manufacturing processes using small, efficient models trained on limited datasets. Steve is passionate about building AI workflows that are both powerful and practical, helping scientists and engineers accelerate R&D, enhance manufacturing efficiency, and uncover new material designs."
   },
   "sina-samangooei": {
     name: "Dr. Sina Samangooei",
@@ -45,11 +47,12 @@ const speakersConfig = {
     image: "images/sina-samangooei.jpg",
     linkedin: "https://www.linkedin.com/in/sinjax/?originalSubdomain=uk",
   },
-  "deepmind-speaker": {
-    name: "[Tentative] Speaker",
-    affiliation: "Google DeepMind",
-    title: "Title coming soon",
-    image: "images/deepmind-speaker.jpg",
-    linkedin: "#",
+  "lei-ge": {
+    name: "Lei Ge",
+    affiliation: "Imperial College London",
+    title: "Do Llamas understand the periodic table?",
+    image: "images/lei-ge.jpg",
+    linkedin: "https://www.linkedin.com/in/lei-ge/",
+    bio:"Lei Ge is a PhD student at Imperial College London specializing in large language models (LLMs) for materials science. Her research explores how LLMs interpret and reason about chemical knowledge to improve explainability, and how LLM-based agents can be designed to accelerate materials optimization and scientific discovery. Alongside her doctoral studies, she works as a part-time Machine Learning Engineer at Polaron, applying her expertise to real-world AI applications."
   }
 };
