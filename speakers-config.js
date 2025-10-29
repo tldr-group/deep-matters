@@ -48,10 +48,11 @@ const speakersConfig = {
   "sina-samangooei": {
     name: "Dr. Sina Samangooei",
     affiliation: "CuspAI",
-    title: "Title coming soon",
+    title: "The CuspAI Platform: Foundation Models, Search, and Agents for Materials Discovery",
     image: "images/sina-samangooei.jpg",
     linkedin: "https://www.linkedin.com/in/sinjax/?originalSubdomain=uk",
-    abstract: "Abstract coming soon"
+    bio:"Sina Samangooei builds multimodal AI systems for materials discovery at CuspAI. Previously at Google DeepMind worked on Gemini and multimodal models, and before that led computer vision for autonomous vehicles at FiveAI. PhD from Southampton in biometrics and multimodal learning. Enjoys hacking on LLMs and distributed ML infrastructure. Lives in Cambridge with partner Em and two kids.",
+    abstract: "Sustainable materials discovery demands AI systems that bridge generation, search, and reasoning with computational chemistry and experimental validation. CuspAI is developing an integrated platform targeting carbon capture and beyond. I'll overview our architecture—generative models, computational tools, property predictors—before discussing our foundation model work: multimodal training combining text and MLIPs, vector search over material structures. The main focus of the talk will be LLM agents: how we're building intelligent orchestration systems that coordinate discovery workflows, make reasoning decisions about which computational tools to deploy, and integrate generation, search, and validation. I'll demonstrate how these agents transform our platform from disconnected tools into a cohesive discovery engine driving materials from hypothesis to synthesis."
   },
   "lei-ge": {
     name: "Lei Ge",
