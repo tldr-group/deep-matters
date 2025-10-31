@@ -6,7 +6,7 @@ const speakersConfig = {
     title: "Revolutionizing AI-Driven Material Discovery Using NVIDIA ALCHEMI",
     image: "images/hassan-sirelkhatim.jpeg",
     linkedin: "https://www.linkedin.com/in/hassan-sirelkhatim/",
-    bio: "Bio coming soon",
+    bio: "Hassan Sirelkhatim is a Senior Solutions Architect with a focus on the intersection of machine learning and biology and chemistry. He has played a key role in advancing foundation models in areas such as nucleotides, proteins, and chemical structures. In his day-to-day work, he partners with customers to optimize their machine learning models for efficient performance on GPUs.",
     abstract: "The discovery of novel materials is central to addressing challenges in energy, sustainability, and advanced manufacturing. However, conventional computational approaches are often limited by their high computational cost. NVIDIA ALCHEMI (AI Lab for Chemistry and Materials Innovation) explores new R&D directions to accelerate this process. A central innovation is Batched approach to simulation on which machine learning interatomic potentials (e.g., MACE, AIMNet2) achieve speedups of up 100x. By exploiting inference batching, GPU-native kernels, and CUDA-optimized libraries, ALCHEMI demonstrates how modern AI and HPC can be combined to deliver accurate, scalable, and physically consistent methods for chemical and materials discovery."
   },
   "peter-coveney": {
