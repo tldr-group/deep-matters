@@ -30,7 +30,7 @@ const speakersConfig = {
   "kevin-jablonka": {
     name: "Dr. Kevin Maik Jablonka",
     affiliation: "University of Jena",
-    title: "A Chemistry-Specific Large Language Model",
+    title: "Transforming chemistry with transformers",
     image: "images/kevin-jablonka.jpg",
     linkedin: "https://kjablonka.com/?utm_source=chatgpt.com",
     bio:"Kevin Jablonka is a researcher with over 30 peer-reviewed publications in machine learning for materials science and digital chemistry. He leads an independent research group at the Helmholtz Institute for Polymers in Energy Applications of the University of Jena and the Helmholtz Center Berlin. Kevin has received numerous awards, such as the Dimitris N. Chorafas Foundation award for outstanding Ph.D. work. He is an active member of the scientific community, serving as a peer reviewer for over 20 journals and as an area chair for machine learning conferences. Kevin belongs to a new generation of scientists with a broad skill set, combining expertise in chemistry, materials science, and artificial intelligence. His research focuses on the digitization of chemistry, from developing electronic lab notebook ecosystems to creating toolboxes for digital reticular chemistry. Recently, Kevin has been at the forefront of applying Large Language Models (LLMs) to chemistry and materials science, co-organizing hackathons and workshops in this rapidly evolving field. Kevin’s research addresses challenges across scales, from atomic-level simulations to pilot plant operations, pushing the boundaries of AI-accelerated discovery in chemistry and materials science.",
