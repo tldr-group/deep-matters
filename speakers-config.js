@@ -62,17 +62,28 @@ const speakersConfig = {
     linkedin: "https://www.linkedin.com/in/ge-lei-04706b28b/?originalSubdomain=uk",
     bio:"Lei Ge is a PhD student at Imperial College London specializing in large language models (LLMs) for materials science. Her research explores how LLMs interpret and reason about chemical knowledge to improve explainability, and how LLM-based agents can be designed to accelerate materials optimization and scientific discovery. Alongside her doctoral studies, she works as a part-time Machine Learning Engineer at Polaron, applying her expertise to real-world AI applications.",
     abstract: "LLMs are increasingly used in materials science for hypothesis generation and knowledge discovery. However, how these models encode specialized scientific knowledge remains unclear. We examine how the open-source Llama models represent the periodic table of elements. By visualizing hidden-state embeddings, we observe a three-dimensional spiral structure that mirrors the conceptual organization of the periodic table. Linear probing further shows that intermediate layers encode continuous, overlapping attributes that enable indirect recall, while deeper layers refine categorical distinctions and integrate linguistic context. These findings suggest that LLMs represent scientific knowledge not as discrete symbols, but as geometric manifolds that intertwine semantics and structure across layers. Our results provide new insight into how LLMs internalize scientific concepts, offering pathways toward improved interpretability, model reliability, and the integration of AI tools in materials discovery."
+  },
+  "ronan-docherty": {
+    name: "Ronan Docherty",
+    affiliation: "Imperial College London",
+    title: "Make do and mend: leveraging vision transformers for micrograph segmentation",
+    image: "images/ronan-docherty.jpg",
+    linkedin: "https://www.linkedin.com/in/ronan-docherty-3812ab2b0/",
+    bio: "Ronan is a PhD student at Imperial College London working on using modern machine learning techniques to improve micrograph segmentation. He also works part-time at Polaron as a machine learning engineer.",
+    abstract: "Segmentation - the assigning of a class to every pixel in an image - is a prerequisite for many kinds of downstream analysis in materials science. Modern computer vision has tended towards foundation models, usually in the form of vision transformers trained on massive datasets of natural images. These models offer impressive performance on benchmarks, encode rich information about the structure and content of images, and are the result of expensive training campaigns. This talk focuses on how to adapt these foundation models for segmentation of materials micrographs, where we often suffer from a lack of data (labelled or otherwise), heavily out-of-distribution images, and the need to capture very fine features."
   }
 };
 
-// Talk order for the schedule (7 talks total)
+// Talk order for the schedule (8 talks total)
 // Simply reorder this array to change the schedule
 const talkOrder = [
-  "hassan-sirelkhatim",  // Talk 1: 10:00 – 10:45
-  "peter-coveney",       // Talk 2: 10:45 – 11:30
-  "lei-ge",              // Talk 7: 16:40 – 17:25
-  "james-gin",           // Talk 3: 12:00 – 12:45
-  "steven-kench",        // Talk 5: 14:30 – 15:15
-  "sina-samangooei",     // Talk 6: 15:55 – 16:40
-  "kevin-jablonka",      // Talk 4: 13:45 – 14:30
+  "hassan-sirelkhatim",  // Talk 1: 10:05 – 10:50
+  "peter-coveney",       // Talk 2: 10:50 – 11:35
+  "lei-ge",              // Talk 3: 12:05 – 12:30
+  "ronan-docherty",      // Talk 4: 12:30 – 12:55
+  "james-gin",           // Talk 5: 14:10 – 14:55
+  "steven-kench",        // Talk 7: 16:10 – 16:55
+  "sina-samangooei",     // Talk 8: 16:55 – 17:40
+  "kevin-jablonka",      // Talk 6: 14:55 – 15:40
+
 ];
