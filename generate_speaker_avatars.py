@@ -41,6 +41,14 @@ SPEAKERS = {
     "lei-ge": {
         "name": "Lei Ge",
         "image": "images/lei-ge.JPG",
+    },
+    "ronan-docherty": {
+        "name": "Ronan Docherty",
+        "image": "images/ronan-docherty.jpg",
+    },
+    "francesco-ferroni": {
+        "name": "Dr. Francesco Ferroni",
+        "image": "images/francesco-ferroni.jpg",
     }
 }
 

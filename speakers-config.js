@@ -25,17 +25,19 @@ const speakersConfig = {
     image: "images/james-gin.jpg",
     linkedin: "https://www.linkedin.com/in/jamesgin/?originalSubdomain=uk",
     bio:"James leads the computational research team at Orbital Materials, a Series A funded and NVIDIA-backed startup which is developing new materials and technologies for the energy transition. Orbital's notable projects include a dual-use data centre chiller which captures ambient CO2 using waste heat, developed as a strategic partner of AWS, a two-phase GPU cooling system powered by a novel non-PFAS dielectric fluid, and the open-source machine learning interatomic potential Orb. His background is in physics and machine learning, and as an entrepreneur has founded several AI companies, one of which was acquired by Shutterstock.",
-    abstract: "At Orbital Materials we accelerate materials discovery using a range of in-house foundation models - including Orb, a universal ML interatomic potential for fast, accurate simulation; diffusion-based models for steerable generation of crystal structures; and LLMs for orchestration of material science workflows. I’ll show how we built Orb, and how MLIPs and generative models are two views of the same energy landscape, connected by the Boltzmann distribution. We'll discuss practical considerations for deploying structure generative models and how missing benchmarks stall progress. Finally we'll show how LLMs can orchestrate other foundation models to accelerate real world research."
+    abstract:"At Orbital Materials we accelerate materials discovery using a range of in-house foundation models - including Orb, a universal ML interatomic potential for fast, accurate simulation; diffusion-based models for steerable generation of crystal structures; and LLMs for orchestration of material science workflows. I'll show how we built Orb, and how MLIPs and generative models are two views of the same energy landscape, connected by the Boltzmann distribution. We'll discuss practical considerations for deploying structure generative models and how missing benchmarks stall progress. Finally we'll show how LLMs can orchestrate other foundation models to accelerate real world research."
   },
-  "kevin-jablonka": {
-    name: "Dr. Kevin Maik Jablonka",
-    affiliation: "University of Jena",
-    title: "Transforming chemistry with transformers",
-    image: "images/kevin-jablonka.jpg",
-    linkedin: "https://kjablonka.com/?utm_source=chatgpt.com",
-    bio:"Kevin Jablonka is a researcher with over 30 peer-reviewed publications in machine learning for materials science and digital chemistry. He leads an independent research group at the Helmholtz Institute for Polymers in Energy Applications of the University of Jena and the Helmholtz Center Berlin. Kevin has received numerous awards, such as the Dimitris N. Chorafas Foundation award for outstanding Ph.D. work. He is an active member of the scientific community, serving as a peer reviewer for over 20 journals and as an area chair for machine learning conferences. Kevin belongs to a new generation of scientists with a broad skill set, combining expertise in chemistry, materials science, and artificial intelligence. His research focuses on the digitization of chemistry, from developing electronic lab notebook ecosystems to creating toolboxes for digital reticular chemistry. Recently, Kevin has been at the forefront of applying Large Language Models (LLMs) to chemistry and materials science, co-organizing hackathons and workshops in this rapidly evolving field. Kevin’s research addresses challenges across scales, from atomic-level simulations to pilot plant operations, pushing the boundaries of AI-accelerated discovery in chemistry and materials science.",
-    abstract:"Chemical sciences increasingly rely on data-driven techniques, but collecting structured tabular data remains challenging compared to text-based records. Large language models (LLMs) offer a solution by converting unstructured text into structured formats and directly solving predictive chemistry tasks. We have developed a chemistry-specific LLM trained on a curated dataset combining knowledge graphs, preprints, and molecular data, along with comprehensive tools for autonomous problem-solving. A specialized benchmark evaluates the model's chemical knowledge and reasoning capabilities. Our results demonstrate how LLMs can leverage both structured data and inductive biases, showcasing their significant potential for advancing chemical research and overcoming traditional machine-learning limitations in chemistry applications."  },
-  
+  "francesco-ferroni": {
+    name: "Dr. Francesco Ferroni",
+    affiliation: "NVIDIA",
+    title: "NVIDIA Cosmos: World Foundation Models for Physical AI",
+    image: "images/francesco-ferroni.jpg",
+    linkedin: "https://www.linkedin.com/in/francesco-ferroni/",
+    bio:"Francesco Ferroni is a Principal Research Scientist at NVIDIA, leading the Deep Imagination Research team. His work focuses on world foundation models (WFMs) for physical AI, spanning video generation, multimodal reasoning, and simulation for robotics and autonomous systems. Previously, he led deep learning teams at Argo AI and holds a PhD in Computational Physics from the University of Oxford.",
+    abstract:"This talk explores NVIDIA Cosmos, a platform for developing world foundation models that power physical AI. Francesco will introduce the Cosmos Predict, Transfer, and Reason models—unifying video generation, controllable simulation, and multimodal reasoning. Attendees will learn how Cosmos bridges large-scale data curation, GPU-accelerated training, and real-world deployment to advance robotics and embodied intelligence."
+  },
+
+
   "steven-kench": {
     name: "Dr. Steven Kench",
     affiliation: "Polaron",
@@ -84,6 +86,6 @@ const talkOrder = [
   "james-gin",           // Talk 5: 14:10 – 14:55
   "steven-kench",        // Talk 7: 16:10 – 16:55
   "sina-samangooei",     // Talk 8: 16:55 – 17:40
-  "kevin-jablonka",      // Talk 6: 14:55 – 15:40
+  "francesco-ferroni",   // Talk 6: 14:55 – 15:40
 
 ];
