@@ -156,6 +156,15 @@
       overflow:visible
     }
     .hero-wrap:after{content:none}
+
+    /* Gallery: continuously scrolling photo strip (static scroller for reduced motion) */
+    .marquee{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 3%,#000 97%,transparent);mask-image:linear-gradient(90deg,transparent,#000 3%,#000 97%,transparent)}
+    .marquee-track{display:flex;width:max-content;animation:marquee 60s linear infinite}
+    .marquee-set{display:flex;gap:16px;padding-right:16px}
+    .marquee-set img{height:200px;width:auto;aspect-ratio:3/2;object-fit:cover;border-radius:var(--radius);background:var(--panel)}
+    @media (min-width:720px){.marquee-set img{height:280px}}
+    @keyframes marquee{to{transform:translateX(-50%)}}
+    @media (prefers-reduced-motion:reduce){.marquee{overflow-x:auto;-webkit-mask-image:none;mask-image:none}.marquee-track{animation:none}.marquee-set[aria-hidden="true"]{display:none}}
   </style>
 </head>
 <body>
@@ -231,6 +240,41 @@
               <li>Connect with a cross-disciplinary community.</li>
               <li>Free, fully catered one-day event.</li>
             </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery">
+      <div class="container">
+        <h2>Highlights</h2>
+        <div class="marquee">
+          <div class="marquee-track">
+            <div class="marquee-set">
+              <img src="images/gallery/01-group-photo.jpg" alt="Group photo of Deep Matters 2025 attendees" loading="lazy" width="960" height="640">
+              <img src="images/gallery/02-talk.jpg" alt="Audience watching a talk" loading="lazy" width="960" height="640">
+              <img src="images/gallery/03-networking.jpg" alt="Attendees chatting during a break" loading="lazy" width="960" height="640">
+              <img src="images/gallery/04-pastries.jpg" alt="Pastries and fruit at the refreshments table" loading="lazy" width="960" height="640">
+              <img src="images/gallery/05-audience.jpg" alt="Packed room listening to a speaker" loading="lazy" width="960" height="640">
+              <img src="images/gallery/06-discussion.jpg" alt="Attendee asking a question from the audience" loading="lazy" width="960" height="640">
+              <img src="images/gallery/07-coffee-break.jpg" alt="Networking over coffee and pastries" loading="lazy" width="960" height="640">
+              <img src="images/gallery/08-lunch.jpg" alt="Lunch buffet" loading="lazy" width="960" height="640">
+              <img src="images/gallery/09-question.jpg" alt="Attendee standing to ask a question" loading="lazy" width="960" height="640">
+              <img src="images/gallery/10-refreshments.jpg" alt="Fresh orange juice being poured" loading="lazy" width="960" height="640">
+            </div>
+            <div class="marquee-set" aria-hidden="true">
+              <img src="images/gallery/01-group-photo.jpg" alt="" loading="lazy" width="960" height="640">
+              <img src="images/gallery/02-talk.jpg" alt="" loading="lazy" width="960" height="640">
+              <img src="images/gallery/03-networking.jpg" alt="" loading="lazy" width="960" height="640">
+              <img src="images/gallery/04-pastries.jpg" alt="" loading="lazy" width="960" height="640">
+              <img src="images/gallery/05-audience.jpg" alt="" loading="lazy" width="960" height="640">
+              <img src="images/gallery/06-discussion.jpg" alt="" loading="lazy" width="960" height="640">
+              <img src="images/gallery/07-coffee-break.jpg" alt="" loading="lazy" width="960" height="640">
+              <img src="images/gallery/08-lunch.jpg" alt="" loading="lazy" width="960" height="640">
+              <img src="images/gallery/09-question.jpg" alt="" loading="lazy" width="960" height="640">
+              <img src="images/gallery/10-refreshments.jpg" alt="" loading="lazy" width="960" height="640">
+            </div>
           </div>
         </div>
       </div>
